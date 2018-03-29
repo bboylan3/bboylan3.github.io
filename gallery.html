@@ -6,6 +6,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="bryanboylan.css">
+
+  <script src="bryanboylan.js"></script>
+
 </head>
 <body>
   
@@ -31,47 +34,105 @@
     <div class="row" id="imgRow">
       <figure class="col-sm-4">
         
-        <img src="./Photos/newport.JPG">
+        <img src="./Photos/newport.JPG" onclick="openModal();currentSlide(1)">
       </figure>
        <figure class="col-sm-4">
        
-        <img src="./Photos/alley.JPG">
+        <img src="./Photos/alley.JPG" onclick="openModal();currentSlide(2)">
       </figure>
       <figure class="col-sm-4">
            
-            <img src="./Photos/parking.jpg">
+            <img src="./Photos/parking.jpg" onclick="openModal();currentSlide(3)">
           </figure>
     </div>
     
     <div class="row" id="imgRow">
       <figure class="col-sm-4">
         
-        <img src="./Photos/palm trees.JPG">
+        <img src="./Photos/palm trees.JPG" onclick="openModal();currentSlide(4)">
       </figure>
        <figure class="col-sm-4">
         
-        <img src="./Photos/busholiday.jpg">
+        <img src="./Photos/busholiday.jpg" onclick="openModal();currentSlide(5)">
       </figure>
       <figure class="col-sm-4">
             
-            <img src="./Photos/netflix.JPG">
+            <img src="./Photos/netflix.JPG" onclick="openModal();currentSlide(6)">
           </figure>
     </div>
 
     <div class="row" id="imgRow">
             <figure class="col-sm-4">
               
-              <img src="./Photos/sky.JPG">
+              <img src="./Photos/sky.JPG" onclick="openModal();currentSlide(7)">
             </figure>
              <figure class="col-sm-4">
               
-              <img src="./Photos/skybeams.JPG">
+              <img src="./Photos/skybeams.JPG" onclick="openModal();currentSlide(8)">
             </figure>
             <figure class="col-sm-4">
                   
-                  <img src="./Photos/steering.JPG">
+                  <img src="./Photos/steering.JPG" onclick="openModal();currentSlide(9)">
                 </figure>
-          </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        
+        <div class="mySlides">
+          
+          <img src="./Photos/newport.JPG" style="width: 100%">
+        </div>
+
+        <div class="mySlides">
+          
+          <img src="./Photos/alley.JPG" style="width: 100%">
+        </div>
+
+        <div class="mySlides">
+          
+          <img src="./Photos/parking.JPG" style="width: 100%">
+        </div>
+
+        <div class="mySlides">
+          
+          <img src="./Photos/palm trees.JPG" style="width: 100%">
+        </div>
+
+        <div class="mySlides">
+          
+          <img src="./Photos/busholiday.JPG" style="width: 100%">
+        </div>
+
+        <div class="mySlides">
+          
+          <img src="./Photos/netflix.JPG" style="width: 100%">
+        </div>
+
+        <div class="mySlides">
+          
+          <img src="./Photos/sky.JPG" style="width: 100%">
+        </div>
+
+        <div class="mySlides">
+          
+          <img src="./Photos/skybeams.JPG" style="width: 100%">
+        </div>
+
+        <div class="mySlides">
+          
+          <img src="./Photos/steering.JPG" style="width: 100%">
+        </div>
+
+
+        <!--Next/Previous-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+    
+    </div>
       
   </section>
   
